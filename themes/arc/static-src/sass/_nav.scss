@@ -1,0 +1,71 @@
+/* =Main Nav
+-----------------------------------------------------------------------------*/
+
+/*
+** Primary Menu blocks
+*/
+
+.menu { 
+  margin: 0 0 3em 0;
+  padding: 0;
+}
+
+.menu li { 
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline;
+}
+
+main > ul.menu li a { 
+	display: block;
+	padding: 8px 5px;
+	margin: 1px 0;
+	border-bottom: 1px dotted #000;
+	text-decoration: none;
+	color: #666;
+	font-size: 1.2em;
+}
+
+main > ul.menu li a:hover {
+	border-bottom: 1px dotted #1b477b;
+	color: #1b477b;
+	text-decoration: none;
+	background-color: #eee;
+}
+
+/* Highlight the active menu item  */
+
+.home .menu li.home a,
+.aboutus .menu li.aboutus a,
+.services .menu li.services a,
+.prices .menu li.prices a {
+	 color: #1b477b;
+	 border-bottom: 1px solid #1b477b;
+	 background-color: #eee;
+}
+
+/*
+** Menu - Horizontal menu
+*/
+
+#footer .menu li a {
+	display: block;
+	padding: 4px 5px;
+	margin: 1px 0;
+	text-decoration: none;
+	color: #000;
+	border-right: 1px dotted #000;
+  float: left;
+}
+  
+#footer .menu li a:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+#footer .menu li a.active {
+	color:#333;
+	text-decoration:underline;
+}

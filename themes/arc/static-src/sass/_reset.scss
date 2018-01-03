@@ -1,0 +1,20 @@
+/*-----------------------------------------------------------------------------*/
+
+/* =Reset
+-----------------------------------------------------------------------------*/
+
+
+/* Remove padding and margin */
+*  { margin: 0; padding: 0; }
+
+/* Put it back on certain elements */
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul  { 
+  margin: .7em 0;
+}
+
+/* Class for clearing floats */
+.clear  { clear: both; }
+
+
+/* Remove border around linked images */
+img  { border: 0; }

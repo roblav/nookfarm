@@ -1,0 +1,41 @@
+/* =Branding
+-----------------------------------------------------------------------------*/
+
+#header .contactdetails {
+  padding: 15px 0; 
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.5em;
+}
+
+#header .email a { 
+  color: #fff;
+}
+
+@media (min-width: 650px) {
+
+  #header .contactdetails { 
+    margin: 15px 15px 0 0; 
+  }
+
+  .contactdetails { 
+    float: right; 
+    text-align: right;
+  }
+}
+
+@media (min-width: 900px) {
+
+  #header .contactdetails { 
+    margin: 25px 60px 0 0; 
+  }
+
+  #header { 
+    font-size: 1.5em;
+  }
+
+  #headerinner {
+    max-width: 960px
+  }
+
+}
