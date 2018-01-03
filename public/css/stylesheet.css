@@ -15,198 +15,302 @@ Pantone Ref details:
 Dark blue: Hex:  #1b477b
 
 -----------------------------------------------------------------------------*/
-
-/* =General
+/* =Branding
 -----------------------------------------------------------------------------*/
+#header .contactdetails {
+  padding: 15px 0;
+  color: #fff;
+  font-size: 1.3em;
+  line-height: 1.5em; }
 
+#header .email a {
+  color: #fff; }
 
+@media (min-width: 650px) {
+  #header .contactdetails {
+    margin: 15px 15px 0 0; }
+  .contactdetails {
+    float: right;
+    text-align: right; } }
+
+@media (min-width: 900px) {
+  #header .contactdetails {
+    margin: 25px 60px 0 0; }
+  #header {
+    font-size: 1.5em; }
+  #headerinner {
+    max-width: 960px; } }
+
+/* =Layout
+-----------------------------------------------------------------------------*/
+#header {
+  background-color: #081d30; }
+
+#headerinner {
+  text-align: center; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+main {
+  padding: 10px 10px 20px; }
+
+#footer {
+  clear: both;
+  margin: 0 30px;
+  padding: 10px 0px;
+  font-size: 1.2em;
+  border-top: 1px solid #1E3A5D; }
+
+@media (min-width: 650px) {
+  #header {
+    width: 100%;
+    margin: 0px;
+    height: 215px;
+    background-color: #081d30; }
+  #headerinner {
+    margin: 0 auto; }
+  .logo {
+    padding: 0;
+    float: left; }
+  main > ul.menu {
+    float: left;
+    width: 30%; }
+  main {
+    width: 650px;
+    margin: -37px auto 0;
+    background: url(/images/bkg.jpg) no-repeat top center;
+    padding: 10px 0px 20px;
+    min-height: 200px;
+    text-align: left; }
+  #maincontent {
+    min-height: 200px;
+    float: right;
+    width: 60%;
+    padding: 0px; }
+  #sidebar {
+    float: left;
+    width: 30%;
+    clear: left; } }
+
+/* =Main Nav
+-----------------------------------------------------------------------------*/
+/*
+** Primary Menu blocks
+*/
+.menu {
+  margin: 0 0 3em 0;
+  padding: 0; }
+
+.menu li {
+  list-style-image: none;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: inline; }
+
+main > ul.menu li a {
+  display: block;
+  padding: 8px 5px;
+  margin: 1px 0;
+  border-bottom: 1px dotted #000;
+  text-decoration: none;
+  color: #666;
+  font-size: 1.2em; }
+
+main > ul.menu li a:hover {
+  border-bottom: 1px dotted #1b477b;
+  color: #1b477b;
+  text-decoration: none;
+  background-color: #eee; }
+
+/* Highlight the active menu item  */
+.home .menu li.home a,
+.aboutus .menu li.aboutus a,
+.services .menu li.services a,
+.prices .menu li.prices a {
+  color: #1b477b;
+  border-bottom: 1px solid #1b477b;
+  background-color: #eee; }
+
+/*
+** Menu - Horizontal menu
+*/
+#footer .menu li a {
+  display: block;
+  padding: 4px 5px;
+  margin: 1px 0;
+  text-decoration: none;
+  color: #000;
+  border-right: 1px dotted #000;
+  float: left; }
+
+#footer .menu li a:hover {
+  color: #333;
+  text-decoration: underline; }
+
+#footer .menu li a.active {
+  color: #333;
+  text-decoration: underline; }
+
+/*-----------------------------------------------------------------------------*/
+/* =Reset
+-----------------------------------------------------------------------------*/
 /* Remove padding and margin */
-*  { margin: 0; padding: 0; }
+* {
+  margin: 0;
+  padding: 0; }
 
 /* Put it back on certain elements */
-h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul  { margin: .7em 0; }
+h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul {
+  margin: .7em 0; }
 
 /* Class for clearing floats */
-.clear  { clear:both; }
-
+.clear {
+  clear: both; }
 
 /* Remove border around linked images */
-img  { border: 0; }
+img {
+  border: 0; }
 
+/* =Headings
+-----------------------------------------------------------------------------*/
+body {
+  font-family: helvetica, verdana, tahoma, arial, "trebuchet ms"; }
+
+h1, h2, h3, h4 {
+  color: #1b477b; }
+
+h1.title {
+  padding: 0 0 3px 0; }
+
+h1 {
+  font-size: 2.4em;
+  font-weight: normal; }
+
+h2 {
+  font-size: 1.8em;
+  padding: 0 0 .2em 0;
+  margin: 1.2em 0 0.8em;
+  font-weight: normal;
+  border-bottom: 1px solid #1b477b; }
+
+h3 {
+  font-size: 1.4em;
+  padding: 0 0 0px 0;
+  margin: 1.2em 0 0.4em;
+  font-weight: normal; }
+
+#sidebar h2 {
+  border-bottom: 1px solid #ddd; }
+
+#sidebar img {
+  margin: 0 auto;
+  display: block;
+  padding-top: 5px;
+  text-align: center; }
+
+/* =Main Elements
+-----------------------------------------------------------------------------*/
+p {
+  padding: 0;
+  margin: 0 0 .7em 0;
+  color: #1b477b; }
+
+p.first {
+  font-size: 1.6em;
+  line-height: 1.7em;
+  color: #302f8f;
+  background-color: #CCEFFF;
+  padding: 1em;
+  border-bottom: 2px solid #00B0FF; }
+
+ul {
+  list-style-type: disc;
+  font-size: 1.2em;
+  list-style-position: inside;
+  margin-left: 2em; }
+
+ol {
+  font-size: 1.2em;
+  padding-left: 2em; }
+
+/* =Links
+-----------------------------------------------------------------------------*/
+a, a:link, a:active {
+  color: #000;
+  text-decoration: none; }
+
+a:visited {
+  color: #000; }
+
+a:hover {
+  text-decoration: underline; }
 
 /* =Typography
 -----------------------------------------------------------------------------*/
 /*
 ** HTML elements
 */
-body  { padding: 0px 0 0 0;  font-family: helvetica, verdana, tahoma, arial, "trebuchet ms"; margin:0 auto; font-size:62.5%; color:#1b477b; border-top: 0px solid #e1001a; text-align: center; }
-
-h1,h2,h3,h4,.contactdetails,ul.menu,#maincontent blockquote p { font-family: "bree-1","bree-2",sans-serif; }
-
-/* =Headings
------------------------------------------------------------------------------*/
-h1,h2,h3, h4 { color:#1b477b; }
-
-h1.title { padding:0 0 3px 0; }
-
-h1 { font-size:2.4em; font-weight:normal; }
-h2 { font-size:1.8em; padding:0 0 .2em 0; margin:1.2em 0 0.8em; font-weight:normal; border-bottom: 1px solid #1b477b; }
-h3 { font-size:1.4em; padding:0 0 0px 0; margin:1.2em 0 0.4em; font-weight:normal; }
-
-#sidebar h2 { border-bottom: 1px solid #ddd; }
-
-#sidebar img { margin: 0 auto; display: block; padding-top:5px; text-align: center; }
-
-/* =Main Elements
------------------------------------------------------------------------------*/
-
-p { padding:0; margin:0 0 .7em 0; color:#1b477b; }
-
-p.first { font-size:1.6em; line-height:1.7em; color:#302f8f; background-color:#CCEFFF; padding:1em; border-bottom: 2px solid #00B0FF; }
-
-ul  { list-style-type: disc; font-size:1.2em; list-style-position: inside; margin-left:2em; }
-
-ol  { font-size:1.2em; padding-left:2em; }
-
-/* =Links
------------------------------------------------------------------------------*/
-
-a, a:link, a:active  { color: #000; text-decoration:none; }
-a:visited  { color: #000; }
-a:hover  { text-decoration:underline; }
-
-/* =Layout
------------------------------------------------------------------------------*/
-
-#header { margin:0px; height: 215px; width:100%; background-color: #081d30; }
-
-#headerinner { width: 1040px; margin:0 auto; }
-
-main { width: 960px; margin: -37px auto 0; background: url(/images/bkg.jpg) no-repeat top center; padding: 10px 0px 20px; min-height: 200px; text-align: left; }
-
-#maincontent  { min-height:200px; float:right; width:564px; margin: 0 39px 20px 15px; padding: 0px; }
-
-#sidebar { float: left; margin: 10px 10px 0px 0px; padding: 0px 0 20px 25px; width: 305px; clear: left; }
-
-/* =Branding
------------------------------------------------------------------------------*/
-
-.logo { padding:0; float:left; }
-
-.contactdetails { float:right; text-align: right; }
-
-#header .contactdetails { margin: 65px 60px 0 0; }
-
-#header .mobile { font-size: 2.5em; color: #fff; }
-
-#header .tel { font-size: 2.5em; color: #fff; }
-
-#header .email { font-size: 2em; color: #fff; padding-top:.5em; }
-
-#header .email a { color: #fff; }
+body {
+  padding: 0 0 0 0;
+  margin: 0 auto;
+  font-size: 62.5%;
+  color: #1b477b; }
 
 /* =Main Content
 -----------------------------------------------------------------------------*/
+#maincontent p {
+  font-size: 1.4em;
+  line-height: 1.5em; }
 
-#maincontent p { font-size:1.4em; line-height:1.5em; }
+#maincontent ul {
+  line-height: 1.6em;
+  font-size: 1.4em; }
 
-#maincontent ul  { line-height:1.6em; font-size:1.4em; }
+#maincontent ol {
+  line-height: 1.6em;
+  font-size: 1.4em; }
 
-#maincontent ol  { line-height:1.6em; font-size:1.4em; }
+ul.services li {
+  display: block;
+  width: 210px;
+  float: left;
+  background: url(/images/tick-orange.jpg) no-repeat top left;
+  padding: 5px 0px 5px 40px; }
 
-ul.services li { display: block; width:210px; float: left; background: url(/images/tick-orange.jpg) no-repeat top left; padding:5px 0px 5px 40px; }
-
-#sidebar ul  { line-height:1.6em; font-size:1.4em; }
-
-/* =Main Nav
------------------------------------------------------------------------------*/
-
-/*
-** Primary Menu blocks
-*/
-
-.menu { margin:0 0 3em 0; padding:0; }
-.menu li { list-style-image:none; list-style-type:none; margin:0; padding:0; display: inline; }
-
-#sidebar ul.menu li a { 
-	display: block;
-	padding: 8px 5px;
-	margin: 1px 0;
-	border-bottom: 1px dotted #000;
-	text-decoration: none;
-	color: #666;
-	font-size: 1.2em;
-}
-#sidebar ul.menu li a:hover {
-	border-bottom: 1px dotted #1b477b;
-	color: #1b477b;
-	text-decoration: none;
-	background-color: #eee;
-}
-
-/* Highlight the active menu item  */
-
-.home .menu li.home a,
-.aboutus .menu li.aboutus a,
-.services .menu li.services a,
-.prices .menu li.prices a {
-	 color: #1b477b;
-	 border-bottom: 1px solid #1b477b;
-	 background-color: #eee;
-}
-
-/*
-** Menu - Horizontal menu
-*/
-
-#footer .menu li a {
-	display: block;
-	padding: 4px 5px;
-	margin: 1px 0;
-	text-decoration: none;
-	color: #000;
-	border-right: 1px dotted #000;
-	float: left; }
-#footer .menu li a:hover {
-	color: #333;
-	text-decoration: underline;
-}
-#footer .menu li a.active {
-	color:#333;
-	text-decoration:underline;
-}
+#sidebar ul {
+  line-height: 1.6em;
+  font-size: 1.4em; }
 
 /* =Secondary Content
 -----------------------------------------------------------------------------*/
-
-/* =Footer
------------------------------------------------------------------------------*/
-
-#footer { clear:both; margin: 0 30px; padding:10px 0px; font-size:1.2em; border-top:1px solid #1E3A5D; width:900px; }
-
-
 /* =Misc 1
 -----------------------------------------------------------------------------*/
-
-table.prices td { background-color: #eee; padding:4px 5px;  border-top:5px solid #fff; font-size: 1.3em; }
+table.prices td {
+  background-color: #eee;
+  padding: 4px 5px;
+  border-top: 5px solid #fff;
+  font-size: 1.3em; }
 
 /* =Misc 2
 -----------------------------------------------------------------------------*/
+blockquote {
+  padding: 0px;
+  margin: 2em 0;
+  clear: both; }
 
-blockquote { 
-	padding:0px; 
-	margin:2em 0; 
-	clear:both; 
-}
-#maincontent blockquote p { 
-	border-top: 1px solid #00B0FF; 
-	border-bottom: 1px solid #00B0FF; 
-	padding:5px; 
-	text-align: center; 
-	color: #00B0FF; 
-	font-size:2em; 
-	line-height:1.5em; 
-	margin:0; 
-}
+#maincontent blockquote p {
+  border-top: 1px solid #00B0FF;
+  border-bottom: 1px solid #00B0FF;
+  padding: 5px;
+  text-align: center;
+  color: #00B0FF;
+  font-size: 2em;
+  line-height: 1.5em;
+  margin: 0; }
 
-#maincontent blockquote p strong { font-size:1.3em; margin:0 .2em; }
+#maincontent blockquote p strong {
+  font-size: 1.3em;
+  margin: 0 .2em; }

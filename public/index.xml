@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Home on Experienced local plasterer Newcastle 0191 394 0212 - Arc Plastering Services</title>
-    <link>http://example.org/</link>
+    <link>/</link>
     <description>Recent content in Home on Experienced local plasterer Newcastle 0191 394 0212 - Arc Plastering Services</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 Dec 2017 21:52:37 +0000</lastBuildDate>
     
-	<atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>About Us</title>
-      <link>http://example.org/about/</link>
+      <link>/about/</link>
       <pubDate>Sat, 16 Dec 2017 21:52:37 +0000</pubDate>
       
-      <guid>http://example.org/about/</guid>
+      <guid>/about/</guid>
       <description>About Us Arc Plastering, established by Mark McRae, is a company that provides consistent quality and care to customers thoughout the North East.
 Having trained in all aspects of internal plastering,&amp;nbsp;Arc Plastering&amp;nbsp;can provide a trustworthy service catering for all internal plastering needs.&amp;nbsp;Arc Plastering&amp;nbsp;has furthered it&amp;rsquo;s expertise to specialise in more demanding plastering methods such as artex covering, arched ceilings, skylight edging restoration, period stairwell ceiling repairs and more.
 Arc plastering has been built solely on the referalls of satisfied customers and is registered with Rated People as well as being a member of the Gateshead registered trading scheme.</description>
@@ -24,20 +24,20 @@ Arc plastering has been built solely on the referalls of satisfied customers and
     
     <item>
       <title>Basic Price Guide</title>
-      <link>http://example.org/basic-price-guide/</link>
+      <link>/basic-price-guide/</link>
       <pubDate>Sat, 16 Dec 2017 21:52:37 +0000</pubDate>
       
-      <guid>http://example.org/basic-price-guide/</guid>
+      <guid>/basic-price-guide/</guid>
       <description>Basic price Guide Here&amp;#39;s a basic price guide to give you an idea about how we price work.
   Ceiling 6&amp;rdquo; x 8&amp;rdquo; &amp;pound;60   Ceiling&amp;nbsp;12&amp;rdquo;x10&amp;rdquo;&amp;nbsp; &amp;pound;160   Living/Bed room&amp;nbsp;Walls &amp;pound;180   Living/Bed room&amp;nbsp;Walls &amp;amp; Ceiling &amp;pound;270   Large Boarded surface areas @ &amp;pound;5 p/m2     Call 0191 394 0212 for a quote.</description>
     </item>
     
     <item>
       <title>Services</title>
-      <link>http://example.org/services/</link>
+      <link>/services/</link>
       <pubDate>Sat, 16 Dec 2017 21:52:37 +0000</pubDate>
       
-      <guid>http://example.org/services/</guid>
+      <guid>/services/</guid>
       <description>Plastering Services Full house Reskims We provide perfect re-skims to entire properties, able to tailor our work to customers specific requirements. We also re-skim old properties retaining the character and period edging if desired.
 Boarding / Stud work / Archways All boarding methods available including insulated boards, fireboards, direct bond (dot &amp;amp; dab), boarding repairs and many more.
 Artex covering specialist Extensive experience in covering all types of artex with a perfect finish guarantee from single ceilings to full house coverings.</description>
