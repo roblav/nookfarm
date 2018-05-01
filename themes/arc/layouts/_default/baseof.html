@@ -18,7 +18,8 @@
 
     <link href='{{ "/css/stylesheet.css" | absURL }}' rel='stylesheet' type="text/css" />
     {{ block "favicon" . }}{{ partial "favicon.html" . }}{{ end }}
-
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/simpleCart.min.js"></script>
   </head>
 
   <body>
@@ -37,6 +38,17 @@
         {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
       </div>
     </main>
-
+  
+    <script>
+        $(document).ready(function() {
+          //do jQuery stuff when DOM is ready
+          simpleCart({
+            checkout: {
+              type: "PayPal",
+              email: "you@yours.com"
+            }
+          });
+        });
+      </script>
   </body>
 </html>

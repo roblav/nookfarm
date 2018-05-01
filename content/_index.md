@@ -3,19 +3,7 @@ title: "Home"
 date: 2017-12-16T21:52:37Z
 ---
 
-<h1>Do you need a local Plasterer? We provide a quality plastering service to the North East</h1>
-<p><img alt="Photo: Mark McRae of Arc Plastering" height="272" src="/images/hero-03.jpg" width="564" /></p>
-<p class="first">Local Plasterer - Arc Plastering specialise in <strong>artex covering</strong>, <strong>arched ceilings</strong>, <strong>skylight edging restoration</strong>, <strong>period stairwell ceiling repairs</strong> and more.</p>
-<p>Arc plastering has been built solely on the referalls of satisfied customers and is registered with Rated People as well as being a member of the Gateshead registered trading scheme.</p>
-<p>Whether you are looking for a small repair or a <strong>full house re-skim</strong> you can be confident that with Arc Plastering you will find a company that provides the highest standard of work.</p>
-<h2>List of Services</h2>
-<ul class="services">
-	<li>Full Re-skims</li>
-	<li>Direct Bond (Dot &amp; Dab)</li>
-	<li>Artex Covered</li>
-	<li>Ceiling Repairs</li>
-	<li>Repairs</li>
-	<li>Arched Ceilings</li>
-	<li>Period Edging</li>
-	<li>Boarding</li>
-</ul>
+<h1>Nook Farm Honey</h1>
+<p>Welcome to the Nook Farm Honey website. Here you will be able to purchase the finest English speciality honeys. We sell Wildflower honey, Heather honey, English Blossom and Balsam honey. Our Cumbrian Wildflower honey is delicious and premium quality. Nook Farm bees forage in the unspoilt countryside of Cumbria. Beekeeper Helen Griggs keeps her bee hives at apiaries in the Kielder Forest area of Northern Cumbria. Our clear honey is unique to the area of Bailey in North East Cumbria. Nook Farm is near Hadrian's Wall between the Lake District, the Northern Pennines, Northumberland, and the Scottish Borders.</p>
+	
+<p>Whatever the reasons you use Honey, whether for the claimed health benefits or you just enjoy the great taste. Please use this site to find out more about us, and our honey.</p>
