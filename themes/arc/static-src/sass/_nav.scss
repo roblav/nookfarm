@@ -18,7 +18,7 @@
   display: inline;
 }
 
-main > ul.menu li a { 
+nav ul.menu li a { 
 	display: block;
 	padding: 8px 5px;
 	margin: 1px 0;
@@ -28,7 +28,7 @@ main > ul.menu li a {
 	font-size: 1.2em;
 }
 
-main > ul.menu li a:hover {
+nav ul.menu li a:hover {
 	border-bottom: 1px dotted #1b477b;
 	color: #1b477b;
 	text-decoration: none;

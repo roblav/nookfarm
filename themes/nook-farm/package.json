@@ -1,0 +1,18 @@
+{
+  "name": "nook-farm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "node-sass --watch static-src/sass -o static/css",
+    "build:js": "browserify static-src/js/*.js > static/js/bundle.js",
+    "build": "npm run build:css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2"
+  }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    {{ .Hugo.Generator }}
+    {{/* NOTE: For Production make sure you add `HUGO_ENV="production"` before your build command */}}
+    {{ if eq (getenv "HUGO_ENV") "production" | or (eq .Site.Params.env "production")  }}
+      <META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+    {{ else }}
+      <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+    {{ end }}
+
+    <link href='{{ "/css/stylesheet.css" | absURL }}' rel="stylesheet">
+    <script src='{{ "/js/responsive-nav.js" | absURL }}'></script>
+    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="/js/simpleCart.min.js"></script>
+
+  </head>
+
+  <body class="js">
+
+    {{ block "header" . }}{{ partial "header.html" .}}{{ end }}
+
+    <main>
+      <div class="header-nav nav-collapse">
+        {{ block "navigation" . }}{{ partial "navigation.html" .}}{{ end }}
+      </div>
+      <nav class="nav-collapse">
+      </nav>
+      <div>
+        <div id="maincontent">
+          {{ block "main" . }}{{ end }}
+        </div>
+        <aside id="sidebar">
+          {{ block "sidebar" . }}{{ partial "sidebar.html" .}}{{ end }}
+        </aside>
+      </div>
+      <footer>
+        {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
+      </footer>
+    </main>
+    <script>
+        var nav = responsiveNav(".nav-collapse");
+
+        $(document).ready(function() {
+          //do jQuery stuff when DOM is ready
+          simpleCart({
+            checkout: {
+              type: "PayPal",
+              email: "you@yours.com"
+            },
+            cartColumns: [
+              { attr: "name" , label: "Name" } ,
+              { attr: "price" , label: "Price", view: 'currency' } ,
+              { attr: "quantity" , label: "Qty" } ,
+              { view: "remove" , text: "Remove" , label: false }
+            ],
+            currency: "GBP"
+          });
+        });
+
+      </script>
+  </body>
+</html>

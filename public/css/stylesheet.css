@@ -17,33 +17,36 @@ Dark blue: Hex:  #1b477b
 -----------------------------------------------------------------------------*/
 /* =Branding
 -----------------------------------------------------------------------------*/
-#header .contactdetails {
-  padding: 15px 0;
+header .contactdetails {
+  padding: 0 0 15px 0;
   color: #fff;
   font-size: 1.3em;
   line-height: 1.5em; }
 
-#header .email a {
+header a,
+header a:visited,
+header a:link,
+header a:active {
   color: #fff; }
 
-@media (min-width: 650px) {
-  #header .contactdetails {
+@media (min-width: 640px) {
+  header .contactdetails {
     margin: 15px 15px 0 0; }
   .contactdetails {
     float: right;
     text-align: right; } }
 
 @media (min-width: 900px) {
-  #header .contactdetails {
+  header .contactdetails {
     margin: 25px 60px 0 0; }
-  #header {
+  header {
     font-size: 1.5em; }
   #headerinner {
     max-width: 960px; } }
 
 /* =Layout
 -----------------------------------------------------------------------------*/
-#header {
+header {
   background-color: #081d30; }
 
 #headerinner {
@@ -56,43 +59,55 @@ img {
 main {
   padding: 10px 10px 20px; }
 
-#footer {
+aside {
   clear: both;
-  margin: 0 30px;
+  padding-top: 1em; }
+
+footer {
+  clear: both;
   padding: 10px 0px;
   font-size: 1.2em;
   border-top: 1px solid #1E3A5D; }
 
-@media (min-width: 650px) {
-  #header {
+@media (min-width: 640px) {
+  header {
     width: 100%;
     margin: 0px;
     height: 215px;
-    background-color: #081d30; }
+    background-color: #081d30;
+    background-image: url(/images/wild-flowers.jpg);
+    background-repeat: no-repeat;
+    background-position: top center; }
   #headerinner {
     margin: 0 auto; }
   .logo {
     padding: 0;
-    float: left; }
-  main > ul.menu {
+    float: left;
+    max-height: 179px; }
+  nav {
     float: left;
     width: 30%; }
   main {
-    width: 650px;
+    width: 80%;
     margin: -37px auto 0;
-    background: url(/images/bkg.jpg) no-repeat top center;
-    padding: 10px 0px 20px;
+    background-image: url(/images/bkg-left.jpg), url(/images/bkg-right.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top right;
+    padding: 10px 45px 20px;
     min-height: 200px;
     text-align: left; }
   #maincontent {
-    min-height: 200px;
     float: right;
-    width: 60%;
-    padding: 0px; }
-  #sidebar {
+    width: 68%;
+    padding: 0; }
+  aside {
     float: left;
     width: 30%;
     clear: left; } }
+
+@media (min-width: 1000px) {
+  main {
+    width: 900px; } }
 
 /* =Main Nav
 -----------------------------------------------------------------------------*/
@@ -110,7 +125,7 @@ main {
   padding: 0;
   display: inline; }
 
-main > ul.menu li a {
+nav ul.menu li a {
   display: block;
   padding: 8px 5px;
   margin: 1px 0;
@@ -119,7 +134,7 @@ main > ul.menu li a {
   color: #666;
   font-size: 1.2em; }
 
-main > ul.menu li a:hover {
+nav ul.menu li a:hover {
   border-bottom: 1px dotted #1b477b;
   color: #1b477b;
   text-decoration: none;
@@ -137,20 +152,24 @@ main > ul.menu li a:hover {
 /*
 ** Menu - Horizontal menu
 */
-#footer .menu li a {
-  display: block;
-  padding: 4px 5px;
-  margin: 1px 0;
-  text-decoration: none;
-  color: #000;
+#footer .menu li a,
+.header-nav .menu li a {
   border-right: 1px dotted #000;
-  float: left; }
+  color: #000;
+  display: block;
+  float: left;
+  font-size: 1.3em;
+  padding: 4px 15px;
+  margin: 1px 0;
+  text-decoration: none; }
 
-#footer .menu li a:hover {
+#footer .menu li a:hover,
+.header-nav .menu li a:hover {
   color: #333;
   text-decoration: underline; }
 
-#footer .menu li a.active {
+#footer .menu li a.active,
+.header-nav .menu li a.active {
   color: #333;
   text-decoration: underline; }
 
@@ -174,6 +193,61 @@ h1, h2, h3, h4, h5, h6, p, pre, blockquote, form, fieldset, table, ul {
 img {
   border: 0; }
 
+/*! responsive-nav.js 1.0.39 by @viljamis */
+.nav-collapse ul {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: block;
+  list-style: none; }
+
+.nav-collapse li {
+  width: 100%; }
+
+.js .nav-collapse {
+  clip: rect(0 0 0 0);
+  max-height: 0;
+  position: absolute;
+  display: block;
+  overflow: hidden;
+  zoom: 1; }
+
+.nav-collapse.opened {
+  max-height: 9999px; }
+
+.nav-toggle {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none; }
+
+.nav-toggle {
+  position: relative;
+  padding-left: 1.25em;
+  margin: 1.25em 0;
+  font-size: 1.2em; }
+
+.nav-toggle:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.2em;
+  width: 1em;
+  height: 0.15em;
+  background: black;
+  box-shadow: 0 4px 0 0 black, 0 8px 0 0 black; }
+
+@media screen and (min-width: 40em) {
+  .js .nav-collapse {
+    position: relative; }
+  .js .nav-collapse.closed {
+    max-height: none; }
+  .nav-toggle {
+    display: none; } }
+
 /* =Headings
 -----------------------------------------------------------------------------*/
 body {
@@ -186,11 +260,11 @@ h1.title {
   padding: 0 0 3px 0; }
 
 h1 {
-  font-size: 2.4em;
+  font-size: 1.8em;
   font-weight: normal; }
 
 h2 {
-  font-size: 1.8em;
+  font-size: 1.4em;
   padding: 0 0 .2em 0;
   margin: 1.2em 0 0.8em;
   font-weight: normal;
@@ -202,10 +276,16 @@ h3 {
   margin: 1.2em 0 0.4em;
   font-weight: normal; }
 
-#sidebar h2 {
+@media (min-width: 650px) {
+  h1 {
+    font-size: 2.4em; }
+  h2 {
+    font-size: 1.8em; } }
+
+aside h2 {
   border-bottom: 1px solid #ddd; }
 
-#sidebar img {
+aside img {
   margin: 0 auto;
   display: block;
   padding-top: 5px;
@@ -248,6 +328,30 @@ a:visited {
 a:hover {
   text-decoration: underline; }
 
+.simpleCart_items {
+  font-size: 1.4em;
+  line-height: 1.5em; }
+
+.simpleCart_items .headerRow {
+  width: 100%;
+  float: left; }
+
+.simpleCart_items .headerRow div,
+.simpleCart_items .itemRow div {
+  float: left;
+  margin: 5px 20px 5px 20px; }
+
+.itemContainer a {
+  text-decoration: none; }
+
+.cartHeaders {
+  width: 100%;
+  float: left; }
+
+.cartHeaders div {
+  float: left;
+  margin: 5px 20px 5px 20px; }
+
 /* =Typography
 -----------------------------------------------------------------------------*/
 /*
@@ -257,7 +361,7 @@ body {
   padding: 0 0 0 0;
   margin: 0 auto;
   font-size: 62.5%;
-  color: #1b477b; }
+  color: #184070; }
 
 /* =Main Content
 -----------------------------------------------------------------------------*/

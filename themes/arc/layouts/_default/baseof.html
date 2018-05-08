@@ -17,38 +17,30 @@
     {{ end }}
 
     <link href='{{ "/css/stylesheet.css" | absURL }}' rel='stylesheet' type="text/css" />
-    {{ block "favicon" . }}{{ partial "favicon.html" . }}{{ end }}
-    <script type="text/javascript" src="/js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="/js/simpleCart.min.js"></script>
+    <script src='{{ "/js/responsive-nav.js" | absURL }}'></script>
+
   </head>
 
-  <body>
+  <body class="js">
 
     {{ block "header" . }}{{ partial "header.html" .}}{{ end }}
 
     <main>
-      {{ block "navigation" . }}{{ partial "navigation.html" .}}{{ end }}
+      <nav class="nav-collapse">
+        {{ block "navigation" . }}{{ partial "navigation.html" .}}{{ end }}
+      </nav>
       <div id="maincontent">
         {{ block "main" . }}{{ end }}
       </div>
-      <div id="sidebar">
+      <aside id="sidebar">
         {{ block "sidebar" . }}{{ partial "sidebar.html" .}}{{ end }}
-      </div>
-      <div id="footer">
+      </aside>
+      <footer>
         {{ block "footer" . }}{{ partial "footer.html" . }}{{ end }}
-      </div>
+      </footer>
     </main>
-  
     <script>
-        $(document).ready(function() {
-          //do jQuery stuff when DOM is ready
-          simpleCart({
-            checkout: {
-              type: "PayPal",
-              email: "you@yours.com"
-            }
-          });
-        });
-      </script>
+        var nav = responsiveNav(".nav-collapse");
+    </script> 
   </body>
 </html>

@@ -8,7 +8,12 @@
   </url>
   
   <url>
-    <loc>/basic-price-guide/</loc>
+    <loc>/order/</loc>
+    <lastmod>2017-12-16T21:52:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/faqs/</loc>
     <lastmod>2017-12-16T21:52:37+00:00</lastmod>
   </url>
   
@@ -18,7 +23,17 @@
   </url>
   
   <url>
-    <loc>/services/</loc>
+    <loc>/links/</loc>
+    <lastmod>2017-12-16T21:52:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/our-honey/</loc>
+    <lastmod>2017-12-16T21:52:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/stockists/</loc>
     <lastmod>2017-12-16T21:52:37+00:00</lastmod>
   </url>
   

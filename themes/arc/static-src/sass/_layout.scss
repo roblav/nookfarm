@@ -2,7 +2,7 @@
 /* =Layout
 -----------------------------------------------------------------------------*/
 
-#header { 
+header { 
   background-color: #081d30;
 }
 
@@ -19,17 +19,22 @@ main {
   padding: 10px 10px 20px;
 }
 
-#footer { 
+aside {
+  clear: both;
+  padding-top: 1em;
+}
+
+footer { 
   clear:both;
-  margin: 0 30px;
+  //margin: 0 30px;
   padding: 10px 0px;
   font-size: 1.2em;
   border-top: 1px solid #1E3A5D;
 }
 
-@media (min-width: 650px) {
+@media (min-width: 640px) {
 
-  #header { 
+  header { 
     width: 100%;
     margin: 0px;
     height: 215px;
@@ -46,29 +51,31 @@ main {
     float: left; 
   }
 
-  main > ul.menu {
+  nav {
     float: left;
     width: 30%;
   }
 
   main { 
-    width: 650px;
+    width: 80%;
     margin: -37px auto 0;
-    background: url(/images/bkg.jpg) no-repeat top center;
-    padding: 10px 0px 20px;
+    background-image: url(/images/bkg-left.jpg), url(/images/bkg-right.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top right;
+    padding: 10px 45px 20px;
     min-height: 200px;
     text-align: left;
   }
 
   #maincontent { 
-    min-height: 200px;
+    //min-height: 200px;
     float: right;
     width: 60%;
     //margin: 0 39px 20px 15px;
-    padding: 0px;
+    padding: 0;
   }
 
-  #sidebar { 
+  aside { 
     float: left;
     width: 30%;
     //margin: 10px 10px 0px 0px;
@@ -76,7 +83,15 @@ main {
     clear: left;
   }
 
-  #footer {
+  footer {
     //width: 900px;
   }
+}
+
+@media (min-width: 1000px) {
+
+  main { 
+    width: 900px;
+  }
+
 }

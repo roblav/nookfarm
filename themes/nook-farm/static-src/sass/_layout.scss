@@ -1,0 +1,100 @@
+
+/* =Layout
+-----------------------------------------------------------------------------*/
+
+header { 
+  background-color: #081d30;
+}
+
+#headerinner {
+  text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main {
+  padding: 10px 10px 20px;
+}
+
+aside {
+  // clear: both;
+  padding-top: 1em;
+}
+
+footer { 
+  clear:both;
+  margin: 1em 0 0 0;
+  padding: 10px 0px;
+  font-size: 1.2em;
+  border-top: 1px solid #1E3A5D;
+}
+
+@media (min-width: 640px) {
+
+  header { 
+    width: 100%;
+    margin: 0px;
+    height: 215px;
+    background-color: #081d30;
+    background-image: url(/images/wild-flowers.jpg);
+    background-repeat: no-repeat;
+    background-position: top center;
+  }
+
+  #headerinner { 
+    //width: 1040px;
+    margin: 0 auto;
+  }
+
+  .logo { 
+    padding: 0;
+    float: left;
+    max-height: 179px;
+  }
+
+  nav {
+    float: left;
+    width: 30%;
+  }
+
+  main { 
+    width: 80%;
+    margin: -37px auto 0;
+    background-image: url(/images/bkg-left.jpg), url(/images/bkg-right.jpg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, top right;
+    padding: 10px 45px 20px;
+    min-height: 200px;
+    text-align: left;
+  }
+
+  #maincontent { 
+    //min-height: 200px;
+    float: left;
+    width: 68%;
+    //margin: 0 39px 20px 15px;
+    padding: 0;
+  }
+
+  aside { 
+    float: right;
+    width: 30%;
+    //margin: 10px 10px 0px 0px;
+    //padding: 0px 0 20px 25px;
+  }
+
+  footer {
+    //width: 900px;
+  }
+}
+
+@media (min-width: 1000px) {
+
+  main { 
+    width: 900px;
+  }
+
+}
