@@ -3,7 +3,7 @@
 -----------------------------------------------------------------------------*/
 
 header { 
-  background-color: #081d30;
+  background-color: #013300;
 }
 
 #headerinner {
@@ -29,7 +29,7 @@ footer {
   margin: 1em 0 0 0;
   padding: 10px 0px;
   font-size: 1.2em;
-  border-top: 1px solid #1E3A5D;
+  border-top: 1px solid #013300;
 }
 
 @media (min-width: 640px) {
@@ -38,7 +38,7 @@ footer {
     width: 100%;
     margin: 0px;
     height: 215px;
-    background-color: #081d30;
+    background-color: rgb(0, 51, 0);
     background-image: url(/images/wild-flowers.jpg);
     background-repeat: no-repeat;
     background-position: top center;
@@ -63,10 +63,10 @@ footer {
   main { 
     width: 80%;
     margin: -37px auto 0;
-    background-image: url(/images/bkg-left.jpg), url(/images/bkg-right.jpg);
+    background-image: url(/images/bkg-left.png), url(/images/bkg-right.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top left, top right;
-    padding: 10px 45px 20px;
+    padding: 10px 55px 20px;
     min-height: 200px;
     text-align: left;
   }
@@ -94,7 +94,7 @@ footer {
 @media (min-width: 1000px) {
 
   main { 
-    width: 900px;
+    width: 880px;
   }
 
 }

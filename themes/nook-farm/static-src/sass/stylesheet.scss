@@ -23,6 +23,7 @@ Dark blue: Hex:  #1b477b
 @import 'responsive-nav';
 @import 'typography';
 @import 'cartjs';
+@import 'form';
 
 /* =Typography
 -----------------------------------------------------------------------------*/
@@ -34,8 +35,16 @@ body  {
   padding: 0 0 0 0;
   margin: 0 auto;
   font-size: 62.5%;
-  color: #184070;
+  //color: #184070;
   //text-align: center;
+}
+
+.clearfix:after { 
+  content: "."; 
+  visibility: hidden; 
+  display: block; 
+  height: 0; 
+  clear: both;
 }
 
 /* =Main Content
@@ -61,7 +70,7 @@ ul.services li {
   width: 210px;
   float: left;
   background: url(/images/tick-orange.jpg) no-repeat top left;
-  padding:5px 0px 5px 40px;
+  padding: 5px 0px 5px 40px;
 }
 
 #sidebar ul { 

@@ -47,7 +47,7 @@ header a:active {
 /* =Layout
 -----------------------------------------------------------------------------*/
 header {
-  background-color: #081d30; }
+  background-color: #013300; }
 
 #headerinner {
   text-align: center; }
@@ -60,21 +60,21 @@ main {
   padding: 10px 10px 20px; }
 
 aside {
-  clear: both;
   padding-top: 1em; }
 
 footer {
   clear: both;
+  margin: 1em 0 0 0;
   padding: 10px 0px;
   font-size: 1.2em;
-  border-top: 1px solid #1E3A5D; }
+  border-top: 1px solid #013300; }
 
 @media (min-width: 640px) {
   header {
     width: 100%;
     margin: 0px;
     height: 215px;
-    background-color: #081d30;
+    background-color: #003300;
     background-image: url(/images/wild-flowers.jpg);
     background-repeat: no-repeat;
     background-position: top center; }
@@ -90,24 +90,23 @@ footer {
   main {
     width: 80%;
     margin: -37px auto 0;
-    background-image: url(/images/bkg-left.jpg), url(/images/bkg-right.jpg);
+    background-image: url(/images/bkg-left.png), url(/images/bkg-right.png);
     background-repeat: no-repeat, no-repeat;
     background-position: top left, top right;
-    padding: 10px 45px 20px;
+    padding: 10px 55px 20px;
     min-height: 200px;
     text-align: left; }
   #maincontent {
-    float: right;
+    float: left;
     width: 68%;
     padding: 0; }
   aside {
-    float: left;
-    width: 30%;
-    clear: left; } }
+    float: right;
+    width: 30%; } }
 
 @media (min-width: 1000px) {
   main {
-    width: 900px; } }
+    width: 880px; } }
 
 /* =Main Nav
 -----------------------------------------------------------------------------*/
@@ -254,7 +253,7 @@ body {
   font-family: helvetica, verdana, tahoma, arial, "trebuchet ms"; }
 
 h1, h2, h3, h4 {
-  color: #1b477b; }
+  color: #013300; }
 
 h1.title {
   padding: 0 0 3px 0; }
@@ -268,7 +267,7 @@ h2 {
   padding: 0 0 .2em 0;
   margin: 1.2em 0 0.8em;
   font-weight: normal;
-  border-bottom: 1px solid #1b477b; }
+  border-bottom: 1px solid #013300; }
 
 h3 {
   font-size: 1.4em;
@@ -296,12 +295,12 @@ aside img {
 p {
   padding: 0;
   margin: 0 0 .7em 0;
-  color: #1b477b; }
+  color: #013300; }
 
 p.first {
   font-size: 1.6em;
   line-height: 1.7em;
-  color: #302f8f;
+  color: #013300;
   background-color: #CCEFFF;
   padding: 1em;
   border-bottom: 2px solid #00B0FF; }
@@ -310,11 +309,11 @@ ul {
   list-style-type: disc;
   font-size: 1.2em;
   list-style-position: inside;
-  margin-left: 2em; }
+  margin-left: 1em; }
 
 ol {
   font-size: 1.2em;
-  padding-left: 2em; }
+  padding-left: 1em; }
 
 /* =Links
 -----------------------------------------------------------------------------*/
@@ -329,8 +328,9 @@ a:hover {
   text-decoration: underline; }
 
 .simpleCart_items {
-  font-size: 1.4em;
-  line-height: 1.5em; }
+  font-size: 1.1em;
+  line-height: 1.3em;
+  clear: both; }
 
 .simpleCart_items .headerRow {
   width: 100%;
@@ -339,7 +339,7 @@ a:hover {
 .simpleCart_items .headerRow div,
 .simpleCart_items .itemRow div {
   float: left;
-  margin: 5px 20px 5px 20px; }
+  margin: 5px; }
 
 .itemContainer a {
   text-decoration: none; }
@@ -352,6 +352,54 @@ a:hover {
   float: left;
   margin: 5px 20px 5px 20px; }
 
+.simpleCart_shelfItem {
+  clear: both;
+  margin-bottom: 1em; }
+
+.simpleCart_shelfItem img {
+  float: left;
+  margin-right: 15px; }
+
+.item_price {
+  font-size: 22px;
+  margin-right: 15px; }
+
+.btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: .25rem;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out; }
+
+.btn-success {
+  color: #fff;
+  background-color: #28a745;
+  border-color: #28a745; }
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #218838;
+  border-color: #1e7e34; }
+
+.btn:not(:disabled):not(.disabled) {
+  cursor: pointer; }
+
+.simpleCart-sidebar {
+  float: left;
+  margin-left: -38em;
+  border: 1px solid #ddd;
+  width: 270px; }
+
 /* =Typography
 -----------------------------------------------------------------------------*/
 /*
@@ -360,8 +408,14 @@ a:hover {
 body {
   padding: 0 0 0 0;
   margin: 0 auto;
-  font-size: 62.5%;
-  color: #184070; }
+  font-size: 62.5%; }
+
+.clearfix:after {
+  content: ".";
+  visibility: hidden;
+  display: block;
+  height: 0;
+  clear: both; }
 
 /* =Main Content
 -----------------------------------------------------------------------------*/

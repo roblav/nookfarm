@@ -8,7 +8,7 @@
     <meta name="MobileOptimized" content="320">
 
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="generator" content="Hugo 0.31.1" />
     
     
       <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
@@ -30,9 +30,7 @@
       sizes="(max-width: 480px) 238px, 446px"
       src="/images/logo-nook-farm.png" alt="Nook Farm Honey Logo" height="179">
     <div class="contactdetails">
-      <div class="mobile">Mob: <a href="tel:07850900919">07850 900 919</a></div>
-      <div class="tel">Tel: <a href="tel:01913940212">0191 394 0212</a></div>
-      <div class="email">Email: <a href="mailto:arcplastering@gmail.com">arcplastering@gmail.com</a></div>
+      <div class="email">Email: <a href="mailto:info@nookfarmhoney.co.uk">info@nookfarmhoney.co.uk</a></div>
     </div>
   </div>
 </header>
@@ -46,13 +44,14 @@
   <li class="stockists"><a href="/stockists" title="Stockists">Stockists</a></li>
   <li class="faqs"><a href="/faqs" title="FAQs">FAQs</a></li>
   <li class="links"><a href="/links" title="Links">Links</a></li>
-  <li class="links"><a href="/order" title="Links">Buy Online</a></li>
+  <li class="order"><a href="/order" title="Links">Buy Online</a></li>
+  <li class="contact"><a href="/contact" title="Links">Contact</a></li>
 </ul>
       </div>
-      <nav class="nav-collapse">
-      </nav>
-      <div id="maincontent">
-        
+
+      <div class="clearfix">
+        <div id="maincontent">
+          
 
 <h1>Links</h1>
     
@@ -83,26 +82,24 @@
 
 
 
-      </div>
-      <aside id="sidebar">
-        
-
-      </aside>
-      <footer>
-        <ul class="menu">
-  <li class="home"><a href="/" title="Home">Home</a></li>
-  <li class="aboutus"><a href="/about" title="About Us">About Us</a></li>
-  <li class="our-honey"><a href="/our-honey" title="Our Honey">Our Honey</a></li>
-  <li class="stockists"><a href="/stockists" title="Stockists">Stockists</a></li>
-  <li class="faqs"><a href="/faqs" title="FAQs">FAQs</a></li>
-  <li class="links"><a href="/links" title="Links">Links</a></li>
-  <li class="links"><a href="/order" title="Links">Buy Online</a></li>
+        </div>
+        <aside id="sidebar">
+          <h2>Our Honey</h2>
+<ul class="sidebar">
+    <li><a href="/pure_cumbrian_wildflower_honey">Pure Cumbrian Wildflower Honey</a></li>
+    <li><a href="/borage_flower_honey">Borage flower honey</a></li>
+    <li><a href="/balsam_flower_honey">Balsam flower honey</a></li>
+    <li><a href="/yorkshire_heather_honey">Yorkshire Heather Honey</a></li>
+    <li><a href="/english_spring_blossom_honey">English Blossom Honey</a></li>
 </ul>
 
+        </aside>
+      </div>
+      <footer>
+        
 <div class="contactdetails">
-  <div class="mobile">Mob: 07850 900 919</div>
-  <div class="tel">Tel: 0191 394 0212</div>
-  <div class="email">Email: <a href="mailto:arcplastering@gmail.com">arcplastering@gmail.com</a></div>
+  <div class="address">Nook Farm, Bailey, Newcastleton, Cumbria, TD9 0TR</div>
+  <div class="email">Email: <a href="mailto:info@nookfarmhoney.co.uk">info@nookfarmhoney.co.uk</a></div>
 </div>
   
       </footer>
@@ -120,12 +117,10 @@
             cartColumns: [
               { attr: "name" , label: "Name" } ,
               { attr: "price" , label: "Price", view: 'currency' } ,
-              { view: "decrement" , label: false , text: "-" } ,
               { attr: "quantity" , label: "Qty" } ,
-              { view: "increment" , label: false , text: "+" } ,
-              { attr: "total" , label: "SubTotal", view: 'currency' } ,
               { view: "remove" , text: "Remove" , label: false }
-            ]
+            ],
+            currency: "GBP"
           });
         });
 

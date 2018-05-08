@@ -5,7 +5,7 @@ body  {
 }
   
 h1, h2, h3, h4 { 
-  color: #1b477b;
+  color: #013300;
 }
 
 h1.title { padding: 0 0 3px 0; }
@@ -20,7 +20,7 @@ h2 {
   padding: 0 0 .2em 0;
   margin: 1.2em 0 0.8em;
   font-weight: normal;
-  border-bottom: 1px solid #1b477b;
+  border-bottom: 1px solid #013300;
 }
 
 h3 {
@@ -57,27 +57,27 @@ aside img {
 
 p { 
   padding:0; margin:0 0 .7em 0;
-  color:#1b477b;
+  color:#013300;
 }
 
 p.first { 
   font-size: 1.6em;
   line-height: 1.7em;
-  color: #302f8f;
+  color: #013300;
   background-color: #CCEFFF;
   padding: 1em;
   border-bottom: 2px solid #00B0FF; }
 
 ul { 
   list-style-type: disc;
-  font-size:1.2em;
+  font-size: 1.2em;
   list-style-position: inside;
-  margin-left:2em;
+  margin-left: 1em;
 }
 
 ol { 
   font-size: 1.2em;
-  padding-left: 2em;
+  padding-left: 1em;
 }
 
 /* =Links
